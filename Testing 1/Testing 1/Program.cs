@@ -1,18 +1,31 @@
-﻿// See https://aka.ms/new-console-template for more information
-
-
+﻿using System;
+using System.Net.Security;
 
 var b = 1;
 
-while (b <= 9)
+while (b <= 30)
 {
     var a = 0;
 
-    while (a <= 9)
+    while (a <= 29)
     {
         a++;
 
-        Console.Write(a * b);
+        var c = a * b;
+
+        if (c < 10)
+        {
+            Console.Write("  ");
+        }
+
+        if (c < 100 && c > 9)
+        {
+            Console.Write(" ");
+        }
+
+        Console.Write(c);
+
+       
 
         Console.Write(" ");
     }
