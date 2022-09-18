@@ -56,7 +56,7 @@ for(int j = 0; j < 2; j++)
     }
     else
     {
-        Console.WriteLine("No Valid Substring Found");
+        Console.WriteLine("No valid substring found");
     }
 }
 
